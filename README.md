@@ -200,6 +200,8 @@ docker-compose up --build
 ### 0. Update Semantic Model to make it AI Ready
 [PBIX File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready.pbix)
 
+[JSON Metadata File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready_metadata.json)
+
 ### 1. DAX Self-Correction Loop
 The current LangGraph workflow stops if Power BI rejects the generated DAX. Add a retry node that feeds the PBI error message back to Claude (with the failed query as context) so it can self-correct and re-execute — targeting up to 2 automatic retries before surfacing the error to the user. This is the single highest-impact stability fix as DAX syntax errors are the most common failure mode.
 
