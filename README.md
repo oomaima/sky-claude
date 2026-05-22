@@ -197,6 +197,8 @@ docker-compose up --build
 
 ## Roadmap — Stabilisation & Enhancement Backlog
 
+### 0. Update Semantic Model to make it AI Ready
+
 ### 1. DAX Self-Correction Loop
 The current LangGraph workflow stops if Power BI rejects the generated DAX. Add a retry node that feeds the PBI error message back to Claude (with the failed query as context) so it can self-correct and re-execute — targeting up to 2 automatic retries before surfacing the error to the user. This is the single highest-impact stability fix as DAX syntax errors are the most common failure mode.
 
@@ -214,6 +216,7 @@ The System Prompts editor currently overwrites with no history. Add a lightweigh
 
 ### 6. Production-Grade AWS Deployment with Bedrock Foundation Models
 Migrate the current single-container setup to a scalable AWS-native architecture. Replace the direct Anthropic API calls with **Amazon Bedrock** (Claude Sonnet via `anthropic.claude-sonnet-4-5` on Bedrock) to gain VPC-level network isolation, IAM-based access control, and no API key management. The target infrastructure: **ECS Fargate** for the FastAPI backend (auto-scaling based on concurrent chat sessions), **CloudFront + S3** for the React frontend, **RDS PostgreSQL** replacing SQLite for multi-user concurrency, and **ElastiCache Redis** for caching Power BI tokens and DAX results. LangGraph agent state should move to **Amazon DynamoDB** for persistence across container restarts. This architecture supports enterprise SSO (via Cognito), audit logging to CloudWatch, and meets the data-residency requirements typical in airline group environments.
+
 
 ---
 
