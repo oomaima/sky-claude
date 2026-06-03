@@ -1,802 +1,1225 @@
 {
-  "modelInfo": {
+  "model": {
     "name": "POC Competitors AI Ready",
-    "connection": "PBIDesktop-POC Competitors AI Ready-57093",
-    "dataSource": "localhost:57093",
-    "databaseId": "04037b40-641b-47a2-bcfa-befc8fd56e3f",
-    "extractedAt": "2026-05-22T11:08:46.494675Z",
-    "source": "Power BI Desktop",
-    "lastUpdated": "2026-05-22T13:01:09.056667+02:00",
-    "modelType": "Tabular",
-    "compatibilityLevel": 1600,
-    "language": "English (United States)",
-    "languageCode": 1033,
-    "estimatedSize": "2039864 bytes",
-    "estimatedSizeMB": 2.04,
-    "purpose": "Competitive Intelligence and Market Analysis",
-    "description": "Comprehensive model for analyzing competitor activities, market positioning, and competitive landscape intelligence in the aviation industry"
-  },
-  "comparisonSummary": {
-    "referenceModel": "model_metadata_comprehensive.json",
-    "targetModel": "POC Competitors AI Ready",
-    "comparisonDate": "2026-05-22T11:08:46.494834Z",
-    "status": "Complete metadata with all expected elements"
+    "connection": "PBIDesktop-POC Competitors AI Ready-49923",
+    "extractedAt": "2026-06-03T15:00:00Z",
+    "lastUpdated": "2026-06-03T15:00:00Z",
+    "source": "Power BI Desktop"
   },
   "tables": [
     {
       "name": "POC Data",
+      "isHidden": false,
+      "columnCount": 29,
+      "measureCount": 38,
       "columns": [
         {
           "name": "RPKs",
           "dataType": "Double",
-          "description": "Revenue passenger per Kilometre. Key airline industry metric that measures the total revenue passenger sold over a given distance."
+          "sourceColumn": "RPKs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Revenue passenger per Kilometre. Key airline industry metric that measures the total revenue passenger sold over a given distance.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Passenger Revenue",
           "dataType": "Double",
-          "description": "Total revenue generated from passenger ticket sales."
+          "sourceColumn": "Passenger Revenue",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Block Hours",
           "dataType": "Double",
-          "description": "Total elapsed time of an aircraft's commercial operation, measured from the moment the aircraft first moves from its departure parking position (block-off or off-blocks) for the purpose of flight, until it comes to a complete stop at its arrival parking position (block-on or on-blocks) at the destination airport."
+          "sourceColumn": "Block Hours",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Total elapsed time of an aircraft's commercial operation, measured from the moment the aircraft first moves from its departure parking position (block-off or off-blocks) for the purpose of flight, until it comes to a complete stop at its arrival parking position (block-on or on-blocks) at the destination airport.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Seats",
           "dataType": "Double",
-          "description": "The total number of passenger seats available on an aircraft or within an airline’s fleet. This KPI reflects the airline’s capacity to carry passengers and is a fundamental measure for planning, revenue management, and operational performance."
+          "sourceColumn": "Seats",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "The total number of passenger seats available on an aircraft or within an airline's fleet. This KPI reflects the airline's capacity to carry passengers and is a fundamental measure for planning, revenue management, and operational performance",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Sectors",
           "dataType": "Double",
-          "description": "Total number of flight segments operated by the airline within a given period."
+          "sourceColumn": "Sectors",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Ownership Costs",
           "dataType": "Double",
-          "description": "Expenses associated with owning aircraft, including depreciation and leasing costs."
+          "sourceColumn": "Ownership Costs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Other Revenue",
           "dataType": "Double",
-          "description": "Income generated from sources other than passenger and cargo operations."
+          "sourceColumn": "Other Revenue",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Total Revenue",
           "dataType": "Double",
-          "description": "The total income generated by an airline or aviation company from all sources, including passenger fares, cargo services, ancillary services (e.g., baggage fees, in-flight sales), and other operational activities. It represents the overall earnings before any expenses are deducted."
+          "sourceColumn": "Total Revenue",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "The total income generated by an airline or aviation company from all sources, including passenger fares, cargo services, ancillary services (e.g., baggage fees, in-flight sales), and other operational activities. It represents the overall earnings before any expenses are deducted.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Fuel Costs",
           "dataType": "Double",
-          "description": "Total expenditure on fuel used for airline operations."
+          "sourceColumn": "Fuel Costs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Passengers",
           "dataType": "Double",
-          "description": "The total number of paying or revenue-generating passengers transported by an airline over a specific period or on a specific flight. This KPI is a primary indicator of demand, airline activity, and operational performance."
+          "sourceColumn": "Passengers",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "The total number of paying or revenue-generating passengers transported by an airline over a specific period or on a specific flight. This KPI is a primary indicator of demand, airline activity, and operational performance",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Total Expenditure on Operations",
           "dataType": "Double",
-          "description": "Sum of all operational expenses incurred by the airline."
+          "sourceColumn": "Total Expenditure on Operations",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Supplier Costs",
           "dataType": "Double",
-          "description": "Costs incurred from third-party suppliers for goods and services."
+          "sourceColumn": "Supplier Costs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "ASKs",
           "dataType": "Double",
-          "description": "Available Seats per Kilometre. Key airline industry metric that measures the total passenger seating capacity available over a given distance."
+          "sourceColumn": "ASKs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Available Seats per Kilometre. Key airline industry metric that measures the total passenger seating capacity available over a given distance.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Cargo Revenue",
           "dataType": "Double",
-          "description": "The total income generated from transporting freight, mail, and other cargo on an airline's flights. It includes revenue from dedicated cargo flights as well as belly cargo transported on passenger aircraft."
+          "sourceColumn": "Cargo Revenue",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "The total income generated from transporting freight, mail, and other cargo on an airline's flights. It includes revenue from dedicated cargo flights as well as belly cargo transported on passenger aircraft.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Employee Costs",
           "dataType": "Double",
-          "description": "Total expenses related to employee compensation, including salaries, benefits, and other labor costs."
-        },
-        {
-          "name": "Status",
-          "dataType": "String",
-          "description": "Generic status field."
+          "sourceColumn": "Employee Costs",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Opco",
           "dataType": "String",
-          "description": "Operating company identifier."
-        },
-        {
-          "name": "Year",
-          "dataType": "Double",
-          "description": "Year of record."
-        },
-        {
-          "name": "Quarter",
-          "dataType": "String",
-          "description": "Quarter of record."
+          "sourceColumn": "Opco",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "%Cash 12m Revenue",
           "dataType": "Double",
-          "description": "Percentage of cash and cash equivalents relative to 12-month revenue."
+          "sourceColumn": "%Cash 12m Revenue",
+          "formatString": "0.0%",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Cash and cash equivalents",
           "dataType": "Double",
-          "description": "Total cash and liquid assets available to the airline."
+          "sourceColumn": "Cash and cash equivalents",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Net debt",
           "dataType": "Double",
-          "description": "Measures a company's total debt position, factoring in its cash and cash equivalents. It gives an indication of how much debt an airline or aviation company has after accounting for available liquidity."
+          "sourceColumn": "Net debt",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Measures a company's total debt position, factoring in its cash and cash equivalents. It gives an indication of how much debt an airline or aviation company has after accounting for available liquidity.",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Net debt/EBITDA",
           "dataType": "Double",
-          "description": "Ratio of net debt to EBITDA, indicating leverage."
+          "sourceColumn": "Net debt/EBITDA",
+          "formatString": "0.0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Flights_15D",
           "dataType": "Double",
-          "description": "Number of flights departing within 15 minutes of scheduled time."
+          "sourceColumn": "Flights_15D",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Flights_180A",
           "dataType": "Double",
-          "description": "Number of flights arriving within 180 minutes of scheduled time."
+          "sourceColumn": "Flights_180A",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Flights",
           "dataType": "Double",
-          "description": "Total number of flights scheduled by the airline within a selected period. This KPI reflects the airline’s planned flight activity over that timeframe."
+          "sourceColumn": "Flights",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Total number of flights scheduled by the airline within a selected period. This KPI reflects the airline's planned flight activity over that timeframe",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
-          "name": "Flights_D",
+          "name": "Flights_Departure",
           "dataType": "Double",
-          "description": "Number of flights departed."
+          "sourceColumn": "Flights_Departure",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
-          "name": "Flights_A",
+          "name": "Flights_Arrival",
           "dataType": "Double",
-          "description": "Number of flights arrived."
+          "sourceColumn": "Flights_Arrival",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Cancellations",
           "dataType": "Double",
-          "description": "Total number of flights cancelled less than 48 hours before the scheduled departure date. This KPI reflects the airline’s short-notice cancellations, which can impact operational planning and passenger experience."
+          "sourceColumn": "Cancellations",
+          "formatString": "#,0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "Total number of flights cancelled less than 48 hours before the scheduled departure date. This KPI reflects the airline's short-notice cancellations, which can impact operational planning and passenger experience",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Date",
           "dataType": "DateTime",
+          "sourceColumn": "Date",
+          "formatString": "Long Date",
+          "summarizeBy": "none",
           "isCalculated": true,
-          "description": "Date of record."
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic",
+            "UnderlyingDateTimeDataType": "Date"
+          }
+        },
+        {
+          "name": "Year",
+          "dataType": "Double",
+          "sourceColumn": "Year",
+          "formatString": "0",
+          "summarizeBy": "sum",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
+        },
+        {
+          "name": "Quarter",
+          "dataType": "String",
+          "sourceColumn": "Quarter",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
+        }
+      ],
+      "measures": [
+        {
+          "name": "_EBIT",
+          "tableName": "POC Data",
+          "expression": "\nCALCULATE(\n    SUM('POC Data'[Total Revenue]) -\n    SUM('POC Data'[Total Expenditure on Operations])\n) / 1000000\n",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "Profit from operations before deducting interest and tax.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "EBIT"
+        },
+        {
+          "name": "_ASKs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[ASKs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "Available Seats per Kilometre. Key airline industry metric that measures the total passenger seating capacity available over a given distance.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "ASKs"
+        },
+        {
+          "name": "_Seats",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Seats]))/1000",
+          "formatString": "#,##0\" K\"",
+          "dataType": "Double",
+          "description": "The total number of passenger seats available on an aircraft or within an airline's fleet. This KPI reflects the airline's capacity to carry passengers and is a fundamental measure for planning, revenue management, and operational performance",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Seats"
+        },
+        {
+          "name": "_Sectors",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Sectors]))",
+          "formatString": "#,0",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Sectors"
+        },
+        {
+          "name": "_Block Hours",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Block Hours]))/1000",
+          "formatString": "#,##0\" K\"",
+          "dataType": "Double",
+          "description": "Total elapsed time of an aircraft's commercial operation, measured from the moment the aircraft first moves from its departure parking position (block-off or off-blocks) for the purpose of flight, until it comes to a complete stop at its arrival parking position (block-on or on-blocks) at the destination airport.",
+          "displayFolder": "Operations",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Block Hours"
+        },
+        {
+          "name": "_Passengers",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Passengers]))/1000",
+          "formatString": "#,##0\" K\"",
+          "dataType": "Double",
+          "description": "The total number of paying or revenue-generating passengers transported by an airline over a specific period or on a specific flight. This KPI is a primary indicator of demand, airline activity, and operational performance",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Passengers"
+        },
+        {
+          "name": "_RPKs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[RPKs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "Revenue passenger per Kilometre. Key airline industry metric that measures the total revenue passenger sold over a given distance.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "RPKs"
+        },
+        {
+          "name": "_Cargo Revenue",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Cargo Revenue]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "The total income generated from transporting freight, mail, and other cargo on an airline's flights. It includes revenue from dedicated cargo flights as well as belly cargo transported on passenger aircraft.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Cargo Revenue"
+        },
+        {
+          "name": "_Employee Costs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Employee Costs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Employee Costs"
+        },
+        {
+          "name": "_Fuel Costs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Fuel Costs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Fuel Costs"
+        },
+        {
+          "name": "_Other Revenue",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Other Revenue]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Other Revenue"
+        },
+        {
+          "name": "_Ownership Costs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Ownership Costs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Ownership Costs"
+        },
+        {
+          "name": "_Passenger Revenue",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Passenger Revenue]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Passenger Revenue"
+        },
+        {
+          "name": "_Supplier Costs",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Supplier Costs]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Supplier Costs"
+        },
+        {
+          "name": "_Total Expenditure on Operations",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Total Expenditure on Operations]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Total Expenditure on Operations"
+        },
+        {
+          "name": "_Total Revenue",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Total Revenue]))/1000000",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "The total income generated by an airline or aviation company from all sources, including passenger fares, cargo services, ancillary services (e.g., baggage fees, in-flight sales), and other operational activities. It represents the overall earnings before any expenses are deducted.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Total Revenue"
+        },
+        {
+          "name": "_Margin",
+          "tableName": "POC Data",
+          "expression": "DIVIDE(CALCULATE(\n        SUM('POC Data'[Total Revenue]) -\n        SUM('POC Data'[Total Expenditure on Operations])\n    ) / 1000000,[_Total Revenue])",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "Profitability ratio that shows the profit that the Opco generates from its core operations in relation with the total revenues.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Margin"
+        },
+        {
+          "name": "_Stage Length",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[ASKs])/SUM('POC Data'[Seats]))",
+          "formatString": "#,##0\" Km\"",
+          "dataType": "Double",
+          "description": "Total distance traveled by an aircraft from takeoff to landing for a single flight leg.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Stage Length"
+        },
+        {
+          "name": "_Gauge",
+          "tableName": "POC Data",
+          "expression": "CALCULATE(SUM('POC Data'[Seats])/SUM('POC Data'[Sectors]))",
+          "formatString": "0.0",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Gauge"
+        },
+        {
+          "name": "_Load Factor",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_RPKs],[_ASKs])",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "Measures the percentage of available seating capacity that is filled with paying passengers. It indicates how efficiently an airline is utilising its capacity.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Load Factor"
+        },
+        {
+          "name": "_RASK",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Total Revenue],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Is the sum of the airline's revenue values divided by the sum of ASK. Informs on the revenue generated by a single passenger's movement per single km",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "RASK"
+        },
+        {
+          "name": "_PRASK",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Passenger Revenue],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Airline performance metric that measures the revenue generated from passenger operations per available seat kilometre. (Passenger Revenue per Available Seat Kilometre)",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "PRASK"
+        },
+        {
+          "name": "_Other RASK",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Other Revenue],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Other RASK"
+        },
+        {
+          "name": "_CASK Fuel",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Fuel Costs],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Efficiency metric that measures fuel expenses per available seat kilometre. (Cost per Available Seat Kilometre)",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK Fuel"
+        },
+        {
+          "name": "_CASK Employee",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Employee Costs],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Measures operating costs per available seat kilometre, considering only labor-related costs. (Cost per Available Seat Kilometre)",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK Employee"
+        },
+        {
+          "name": "_CASK Supplier",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Supplier Costs],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Measures operating costs per available seat kilometre, considering costs related to third-party services and external suppliers. (Cost per Available Seat Kilometre)",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK Supplier"
+        },
+        {
+          "name": "_CASK Ownership",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Ownership Costs],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Measures operating costs per available seat kilometre, associated with aircraft ownership. (Cost per Available Seat Kilometre)",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK Ownership"
+        },
+        {
+          "name": "_CASK exFuel",
+          "tableName": "POC Data",
+          "expression": "DIVIDE(([_Ownership Costs]+[_Employee Costs]+[_Supplier Costs]),[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Airline financial metric that measures operating costs per available seat kilometre, excluding fuel expenses. (Cost per Available Seat Kilometre)",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK exFuel"
+        },
+        {
+          "name": "_OTP 15D",
+          "tableName": "POC Data",
+          "expression": "\nCALCULATE(SUM('POC Data'[Flights_15D])/SUM('POC Data'[Flights_Departure]))",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "OnTime Performance on Departures (15 minutes) measures the proportion of flights that depart within 15 minutes of their scheduled departure time during a selected period. This KPI reflects the airline's operational punctuality and reliability in departures. A higher OTP indicates effective flight preparation, ground handling, and adherence to the published schedule, contributing to operational efficiency and passenger satisfaction.",
+          "displayFolder": "Operations",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "OTP 15D"
+        },
+        {
+          "name": "_OTP 180A",
+          "tableName": "POC Data",
+          "expression": "\nCALCULATE(SUM('POC Data'[Flights_180A])/SUM('POC Data'[Flights_Arrival]))",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "OnTime Performance on Arrival (180 minutes) measures the proportion of flights that arrive within 180 minutes of their scheduled arrival time during a selected period. Delays beyond 180 minutes are particularly relevant, as they may trigger passenger compensations. This KPI reflects the airline's operational punctuality and reliability in arrivals. A higher OTP indicates effective flight preparation, ground handling, and adherence to the published schedule, contributing to operational efficiency and passenger satisfaction.",
+          "displayFolder": "Operations",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "OTP 180A"
+        },
+        {
+          "name": "_Regularity",
+          "tableName": "POC Data",
+          "expression": "\nCALCULATE((SUM('POC Data'[Flights])-(SUM('POC Data'[Cancellations])))/SUM('POC Data'[Flights]))",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "Regularity measures the proportion of scheduled flights that are operated (non cancelled) by the airline within a selected period. It reflects the airline's reliability in executing its planned schedule, providing insight into operational stability and consistency. A high regularity indicates that the airline is effectively meeting its published flight commitments",
+          "displayFolder": "Operations",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Regularity"
+        },
+        {
+          "name": "_Net debt",
+          "tableName": "POC Data",
+          "expression": "\nVAR SelectedYear =\n    MAX('POC Data'[Year])\nVAR LatestQuarter =\n    CALCULATE(\n        MAX('POC Data'[Quarter]),\n        'POC Data'[Year] = SelectedYear\n    )\nRETURN\nCALCULATE(\n    MAX('POC Data'[Net debt]),\n    'POC Data'[Year] = SelectedYear,\n    'POC Data'[Quarter] = LatestQuarter\n)/1000000\n",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "Measures a company's total debt position, factoring in its cash and cash equivalents. It gives an indication of how much debt an airline or aviation company has after accounting for available liquidity.",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Net debt"
+        },
+        {
+          "name": "_Cash and cash equivalents",
+          "tableName": "POC Data",
+          "expression": "\nVAR SelectedYear =\n    MAX('POC Data'[Year])\nVAR LatestQuarter =\n    CALCULATE(\n        MAX('POC Data'[Quarter]),\n        'POC Data'[Year] = SelectedYear\n     )\nRETURN\nCALCULATE(\n    MAX('POC Data'[Cash and cash equivalents]),\n    'POC Data'[Year] = SelectedYear,\n    'POC Data'[Quarter] = LatestQuarter\n)/1000000\n",
+          "formatString": "#,##0\" M\"",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Cash and cash equivalents"
+        },
+        {
+          "name": "_Net debt/EBITDA",
+          "tableName": "POC Data",
+          "expression": "\nVAR SelectedYear =\n    MAX('POC Data'[Year])\nVAR LatestQuarter =\n    CALCULATE(\n        MAX('POC Data'[Quarter]),\n        'POC Data'[Year] = SelectedYear\n    )\nRETURN\nCALCULATE(\n    MAX('POC Data'[Net debt/EBITDA]),\n    'POC Data'[Year] = SelectedYear,\n    'POC Data'[Quarter] = LatestQuarter\n)\n",
+          "formatString": "\"x \"#,##0.0",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Net debt/EBITDA"
+        },
+        {
+          "name": "_%Cash 12m Revenue",
+          "tableName": "POC Data",
+          "expression": "\nVAR SelectedYear =\n    MAX('POC Data'[Year])\nVAR LatestQuarter =\n    CALCULATE(\n        MAX('POC Data'[Quarter]),\n        'POC Data'[Year] = SelectedYear\n    )\nRETURN\nCALCULATE(\n    MAX('POC Data'[%Cash 12m Revenue]),\n    'POC Data'[Year] = SelectedYear,\n    'POC Data'[Quarter] = LatestQuarter\n)\n",
+          "formatString": "0.0 %;-0.0 %;0.0 %",
+          "dataType": "Double",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "%Cash 12m Revenue"
+        },
+        {
+          "name": "_CASK",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Total Expenditure on Operations],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Is the sum of the airline's cost values divided by the sum of ASK. Informs on the cost generated by a single passenger's movement per single km",
+          "displayFolder": "CASK",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "CASK"
+        },
+        {
+          "name": "_Cargo RASK",
+          "tableName": "POC Data",
+          "expression": "DIVIDE([_Cargo Revenue],[_ASKs])*100",
+          "formatString": "#,##0.00\" c\"",
+          "dataType": "Double",
+          "description": "Is the sum of the airline's cargo revenue values divided by the sum of ASK. Informs on the revenue generated by a single passenger's movement per single km",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Cargo RASK"
+        },
+        {
+          "name": "Measure",
+          "tableName": "POC Data",
+          "expression": "",
+          "formatString": "",
+          "dataType": "Int64",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Measure"
         }
       ]
     },
     {
       "name": "Currency",
+      "isHidden": false,
+      "columnCount": 3,
+      "measureCount": 2,
       "columns": [
         {
           "name": "CURRENCY",
           "dataType": "String",
-          "description": "Currency code."
+          "sourceColumn": "CURRENCY",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "OPCO",
           "dataType": "String",
-          "description": "Operating company identifier."
+          "sourceColumn": "OPCO",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "SUBUNIT",
           "dataType": "String",
+          "sourceColumn": "SUBUNIT",
+          "formatString": "",
+          "summarizeBy": "none",
           "isCalculated": true,
-          "description": "Currency subunit."
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
+        }
+      ],
+      "measures": [
+        {
+          "name": "Selected Currency",
+          "tableName": "Currency",
+          "expression": "SELECTEDVALUE(Currency[CURRENCY])",
+          "formatString": "",
+          "dataType": "String",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Selected Currency"
+        },
+        {
+          "name": "Selected Subunit",
+          "tableName": "Currency",
+          "expression": "SELECTEDVALUE(Currency[SUBUNIT])",
+          "formatString": "",
+          "dataType": "String",
+          "description": "",
+          "displayFolder": "",
+          "isHidden": false,
+          "state": "Ready",
+          "outputName": "Selected Subunit"
         }
       ]
     },
     {
       "name": "Dim_Calendar",
+      "isHidden": false,
+      "columnCount": 5,
+      "measureCount": 0,
       "columns": [
         {
           "name": "Date",
           "dataType": "DateTime",
-          "description": "Calendar date."
+          "sourceColumn": "Date",
+          "formatString": "Long Date",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic",
+            "UnderlyingDateTimeDataType": "Date"
+          }
         },
         {
           "name": "Year",
           "dataType": "Int64",
-          "description": "Year value."
+          "sourceColumn": "Year",
+          "formatString": "0",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "MonthNumber",
           "dataType": "Int64",
-          "description": "Month number."
+          "sourceColumn": "MonthNumber",
+          "formatString": "0",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Day",
           "dataType": "Int64",
-          "description": "Day value."
+          "sourceColumn": "Day",
+          "formatString": "0",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Quarter",
           "dataType": "String",
-          "description": "Quarter value."
+          "sourceColumn": "Quarter",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         }
-      ]
+      ],
+      "measures": []
     },
     {
       "name": "Dim_Airlines",
+      "isHidden": false,
+      "columnCount": 7,
+      "measureCount": 0,
       "columns": [
         {
           "name": "Airline Code",
           "dataType": "String",
-          "description": "Unique airline code."
+          "sourceColumn": "Airline Code",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Airline Name",
           "dataType": "String",
-          "description": "Name of the airline."
+          "sourceColumn": "Airline Name",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Ariline Type",
           "dataType": "String",
-          "description": "Type of airline."
+          "sourceColumn": "Ariline Type",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Continent",
           "dataType": "String",
-          "description": "Continent of operation."
+          "sourceColumn": "Continent",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Country",
           "dataType": "String",
-          "description": "Country of operation."
+          "sourceColumn": "Country",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "IAG Region",
           "dataType": "String",
-          "description": "IAG region."
+          "sourceColumn": "IAG Region",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         },
         {
           "name": "Group Name",
           "dataType": "String",
-          "description": "Name of the airline group."
-        },
-        {
-          "name": "OpCo Type",
-          "dataType": "String",
-          "description": "Type of operating company."
+          "sourceColumn": "Group Name",
+          "formatString": "",
+          "summarizeBy": "none",
+          "isCalculated": false,
+          "isHidden": false,
+          "isNullable": true,
+          "description": "",
+          "displayFolder": "",
+          "annotations": {
+            "SummarizationSetBy": "Automatic"
+          }
         }
-      ]
-    }
-  ],
-  "measures": [
-    {
-      "name": "_EBIT",
-      "description": "Profit from operations before deducting interest and tax.",
-      "expression": "CALCULATE( SUM('POC Data'[Total Revenue]) - SUM('POC Data'[Total Expenditure on Operations]) ) / 1000000"
-    },
-    {
-      "name": "_ASKs",
-      "description": "Available Seats per Kilometre. Key airline industry metric that measures the total passenger seating capacity available over a given distance.",
-      "expression": "CALCULATE(SUM('POC Data'[ASKs]))/1000000"
-    },
-    {
-      "name": "_Seats",
-      "description": "The total number of passenger seats available on an aircraft or within an airline’s fleet. This KPI reflects the airline’s capacity to carry passengers and is a fundamental measure for planning, revenue management, and operational performance",
-      "expression": "CALCULATE(SUM('POC Data'[Seats]))/1000"
-    },
-    {
-      "name": "_Sectors",
-      "description": "Total number of flight segments operated by the airline within a given period.",
-      "expression": "CALCULATE(SUM('POC Data'[Sectors]))"
-    },
-    {
-      "name": "_Block Hours",
-      "description": "Total elapsed time of an aircraft's commercial operation, measured from the moment the aircraft first moves from its departure parking position (block-off or off-blocks) for the purpose of flight, until it comes to a complete stop at its arrival parking position (block-on or on-blocks) at the destination airport.",
-      "expression": "CALCULATE(SUM('POC Data'[Block Hours]))/1000"
-    },
-    {
-      "name": "_Passengers",
-      "description": "The total number of paying or revenue-generating passengers transported by an airline over a specific period or on a specific flight. This KPI is a primary indicator of demand, airline activity, and operational performance",
-      "expression": "CALCULATE(SUM('POC Data'[Passengers]))/1000"
-    },
-    {
-      "name": "_RPKs",
-      "description": "Revenue passenger per Kilometre. Key airline industry metric that measures the total revenue passenger sold over a given distance.",
-      "expression": "CALCULATE(SUM('POC Data'[RPKs]))/1000000"
-    },
-    {
-      "name": "_Cargo Revenue",
-      "description": "The total income generated from transporting freight, mail, and other cargo on an airline's flights. It includes revenue from dedicated cargo flights as well as belly cargo transported on passenger aircraft.",
-      "expression": "CALCULATE(SUM('POC Data'[Cargo Revenue]))/1000000"
-    },
-    {
-      "name": "_Employee Costs",
-      "description": "Total expenses related to employee compensation, including salaries, benefits, and other labor costs.",
-      "expression": "CALCULATE(SUM('POC Data'[Employee Costs]))/1000000"
-    },
-    {
-      "name": "_Fuel Costs",
-      "description": "Total expenditure on fuel used for airline operations.",
-      "expression": "CALCULATE(SUM('POC Data'[Fuel Costs]))/1000000"
-    },
-    {
-      "name": "_Other Revenue",
-      "description": "Income generated from sources other than passenger and cargo operations.",
-      "expression": "CALCULATE(SUM('POC Data'[Other Revenue]))/1000000"
-    },
-    {
-      "name": "_Ownership Costs",
-      "description": "Expenses associated with owning aircraft, including depreciation and leasing costs.",
-      "expression": "CALCULATE(SUM('POC Data'[Ownership Costs]))/1000000"
-    },
-    {
-      "name": "_Passenger Revenue",
-      "description": "Total revenue generated from passenger ticket sales.",
-      "expression": "CALCULATE(SUM('POC Data'[Passenger Revenue]))/1000000"
-    },
-    {
-      "name": "_Supplier Costs",
-      "description": "Costs incurred from third-party suppliers for goods and services.",
-      "expression": "CALCULATE(SUM('POC Data'[Supplier Costs]))/1000000"
-    },
-    {
-      "name": "_Total Expenditure on Operations",
-      "description": "Sum of all operational expenses incurred by the airline.",
-      "expression": "CALCULATE(SUM('POC Data'[Total Expenditure on Operations]))/1000000"
-    },
-    {
-      "name": "_Total Revenue",
-      "description": "The total income generated by an airline or aviation company from all sources, including passenger fares, cargo services, ancillary services (e.g., baggage fees, in-flight sales), and other operational activities. It represents the overall earnings before any expenses are deducted.",
-      "expression": "CALCULATE(SUM('POC Data'[Total Revenue]))/1000000"
-    },
-    {
-      "name": "_Margin",
-      "description": "Profitability ratio that shows the profit that the Opco generates from its core operations in relation with the total revenues.",
-      "expression": "DIVIDE(CALCULATE( SUM('POC Data'[Total Revenue]) - SUM('POC Data'[Total Expenditure on Operations]) ) / 1000000,[_Total Revenue])"
-    },
-    {
-      "name": "_Stage Length",
-      "description": "Total distance traveled by an aircraft from takeoff to landing for a single flight leg.",
-      "expression": "CALCULATE(SUM('POC Data'[ASKs])/SUM('POC Data'[Seats]))"
-    },
-    {
-      "name": "_Gauge",
-      "description": "Average number of seats per aircraft or per flight.",
-      "expression": "CALCULATE(SUM('POC Data'[Seats])/SUM('POC Data'[Sectors]))"
-    },
-    {
-      "name": "_Load Factor",
-      "description": "Measures the percentage of available seating capacity that is filled with paying passengers. It indicates how efficiently an airline is utilising its capacity.",
-      "expression": "DIVIDE([_RPKs],[_ASKs])"
-    },
-    {
-      "name": "_RASK",
-      "description": "Is the sum of the airline’s revenue values divided by the sum of ASK. Informs on the revenue generated by a single passenger’s movement per single km",
-      "expression": "DIVIDE([_Total Revenue],[_ASKs])*100"
-    },
-    {
-      "name": "_PRASK",
-      "description": "Airline performance metric that measures the revenue generated from passenger operations per available seat kilometre. (Passenger Revenue per Available Seat Kilometre)",
-      "expression": "DIVIDE([_Passenger Revenue],[_ASKs])*100"
-    },
-    {
-      "name": "_Other RASK",
-      "description": "Revenue per available seat kilometer from sources other than passenger operations.",
-      "expression": "DIVIDE([_Other Revenue],[_ASKs])*100"
-    },
-    {
-      "name": "_CASK Fuel",
-      "description": "Efficiency metric that measures fuel expenses per available seat kilometre. (Cost per Available Seat Kilometre)",
-      "expression": "DIVIDE([_Fuel Costs],[_ASKs])*100"
-    },
-    {
-      "name": "_CASK Employee",
-      "description": "Measures operating costs per available seat kilometre, considering only labor-related costs. (Cost per Available Seat Kilometre)",
-      "expression": "DIVIDE([_Employee Costs],[_ASKs])*100"
-    },
-    {
-      "name": "_CASK Supplier",
-      "description": "Measures operating costs per available seat kilometre, considering costs related to third-party services and external suppliers.  (Cost per Available Seat Kilometre)",
-      "expression": "DIVIDE([_Supplier Costs],[_ASKs])*100"
-    },
-    {
-      "name": "_CASK Ownership",
-      "description": "Measures operating costs per available seat kilometre, associated with aircraft ownership. (Cost per Available Seat Kilometre)",
-      "expression": "DIVIDE([_Ownership Costs],[_ASKs])*100"
-    },
-    {
-      "name": "_CASK exFuel",
-      "description": "Airline financial metric that measures operating costs per available seat kilometre, excluding fuel expenses. ​ (Cost per Available Seat Kilometre)",
-      "expression": "DIVIDE(([_Ownership Costs]+[_Employee Costs]+[_Supplier Costs]),[_ASKs])*100"
-    },
-    {
-      "name": "_OTP 15D",
-      "description": "OnTime Performance on Departures (15 minutes) measures the proportion of flights that depart within 15 minutes of their scheduled departure time during a selected period. This KPI reflects the airline’s operational punctuality and reliability in departures. A higher OTP indicates effective flight preparation, ground handling, and adherence to the published schedule, contributing to operational efficiency and passenger satisfaction.",
-      "expression": "CALCULATE(SUM('POC Data'[Flights_15D])/SUM('POC Data'[Flights_D]))"
-    },
-    {
-      "name": "_OTP 180A",
-      "description": "OnTime Performance on Arrival (180 minutes) measures the proportion of flights that arrive within 180 minutes of their scheduled arrival time during a selected period. Delays beyond 180 minutes are particularly relevant, as they may trigger passenger compensations. This KPI reflects the airline’s operational punctuality and reliability in arrivals. A higher OTP indicates effective flight preparation, ground handling, and adherence to the published schedule, contributing to operational efficiency and passenger satisfaction.",
-      "expression": "CALCULATE(SUM('POC Data'[Flights_180A])/SUM('POC Data'[Flights_A]))"
-    },
-    {
-      "name": "_Regularity",
-      "description": "Regularity measures the proportion of scheduled flights that are operated (non cancelled) by the airline within a selected period. It reflects the airline’s reliability in executing its planned schedule, providing insight into operational stability and consistency. A high regularity indicates that the airline is effectively meeting its published flight commitments",
-      "expression": "CALCULATE((SUM('POC Data'[Flights])-(SUM('POC Data'[Cancellations])))/SUM('POC Data'[Flights]))"
-    },
-    {
-      "name": "_Net debt",
-      "description": "Measures a company's total debt position, factoring in its cash and cash equivalents. It gives an indication of how much debt an airline or aviation company has after accounting for available liquidity.",
-      "expression": "VAR SelectedYear = MAX('POC Data'[Year]) VAR LatestQuarter = CALCULATE( MAX('POC Data'[Quarter]), 'POC Data'[Year] = SelectedYear ) RETURN CALCULATE( MAX('POC Data'[Net debt]), 'POC Data'[Year] = SelectedYear, 'POC Data'[Quarter] = LatestQuarter )/1000000"
-    },
-    {
-      "name": "_Cash and cash equivalents",
-      "description": "Total cash and liquid assets available to the airline.",
-      "expression": "VAR SelectedYear = MAX('POC Data'[Year]) VAR LatestQuarter = CALCULATE( MAX('POC Data'[Quarter]), 'POC Data'[Year] = SelectedYear ) RETURN CALCULATE( MAX('POC Data'[Cash and cash equivalents]), 'POC Data'[Year] = SelectedYear, 'POC Data'[Quarter] = LatestQuarter )/1000000"
-    },
-    {
-      "name": "_Net debt/EBITDA",
-      "description": "Ratio of net debt to EBITDA, indicating leverage.",
-      "expression": "VAR SelectedYear = MAX('POC Data'[Year]) VAR LatestQuarter = CALCULATE( MAX('POC Data'[Quarter]), 'POC Data'[Year] = SelectedYear ) RETURN CALCULATE( MAX('POC Data'[Net debt/EBITDA]), 'POC Data'[Year] = SelectedYear, 'POC Data'[Quarter] = LatestQuarter )"
-    },
-    {
-      "name": "_%Cash 12m Revenue",
-      "description": "Percentage of cash and cash equivalents relative to 12-month revenue.",
-      "expression": "VAR SelectedYear = MAX('POC Data'[Year]) VAR LatestQuarter = CALCULATE( MAX('POC Data'[Quarter]), 'POC Data'[Year] = SelectedYear ) RETURN CALCULATE( MAX('POC Data'[%Cash 12m Revenue]), 'POC Data'[Year] = SelectedYear, 'POC Data'[Quarter] = LatestQuarter )"
-    },
-    {
-      "name": "_CASK",
-      "description": "Is the sum of the airline’s cost values divided by the sum of ASK. Informs on the cost generated by a single passenger’s movement per single km",
-      "expression": "DIVIDE([_Total Expenditure on Operations],[_ASKs])*100"
-    },
-    {
-      "name": "_Cargo RASK",
-      "description": "Is the sum of the airline’s cargo revenue values divided by the sum of ASK. Informs on the revenue generated by a single passenger’s movement per single km",
-      "expression": "DIVIDE([_Cargo Revenue],[_ASKs])*100"
-    },
-    {
-      "name": "Selected Currency",
-      "description": "Currently selected currency for reporting or analysis.",
-      "expression": "VAR SelectedOpco = SELECTEDVALUE('POC Data'[Opco]) RETURN LOOKUPVALUE( 'Currency'[CURRENCY], 'Currency'[OPCO], SelectedOpco )"
-    },
-    {
-      "name": "Selected Subunit",
-      "description": "Currently selected currency subunit for reporting or analysis.",
-      "expression": "VAR SelectedOpco = SELECTEDVALUE('POC Data'[Opco]) RETURN LOOKUPVALUE( 'Currency'[SUBUNIT], 'Currency'[OPCO], SelectedOpco )"
+      ],
+      "measures": []
     }
   ],
   "relationships": [
     {
-      "fromTable": "POC Data",
-      "fromColumn": "Opco",
-      "toTable": "Currency",
-      "toColumn": "OPCO",
-      "isActive": true,
-      "crossFilteringBehavior": "OneDirection",
-      "fromCardinality": "Many",
-      "toCardinality": "One",
-      "name": "AutoDetected_fbd1a3c9-5a8e-4da8-9ec3-94acd68c34ba"
-    },
-    {
+      "name": "POC Data_Date",
       "fromTable": "POC Data",
       "fromColumn": "Date",
+      "fromCardinality": "Many",
       "toTable": "Dim_Calendar",
       "toColumn": "Date",
+      "toCardinality": "One",
       "isActive": true,
       "crossFilteringBehavior": "OneDirection",
-      "fromCardinality": "Many",
-      "toCardinality": "One",
-      "name": "67f0410a-5ac2-2d5a-7346-21a2aa3e7dfa"
+      "type": "Many-to-One"
     },
     {
+      "name": "POC Data_Opco",
       "fromTable": "POC Data",
       "fromColumn": "Opco",
+      "fromCardinality": "Many",
       "toTable": "Dim_Airlines",
       "toColumn": "Airline Code",
+      "toCardinality": "One",
       "isActive": true,
       "crossFilteringBehavior": "OneDirection",
-      "fromCardinality": "Many",
-      "toCardinality": "One",
-      "name": "cb8eff60-6c3b-3189-46f0-935f037b4610"
+      "type": "Many-to-One"
     }
   ],
-  "statistics": {
+  "summary": {
     "totalTables": 4,
-    "totalMeasures": 39,
-    "totalColumns": 46,
-    "totalRelationships": 3
-  },
-  "expectedStructure": {
-    "tables": {
-      "POC Data": {
-        "description": "Main fact table with operational and financial metrics",
-        "columnCount": 30,
-        "status": "Primary table with revenue, cost, and operational metrics"
-      },
-      "Currency": {
-        "description": "Dimension table for currency information",
-        "columnCount": 3,
-        "status": "Supporting dimension for multi-currency reporting"
-      },
-      "Dim_Calendar": {
-        "description": "Dimension table for temporal analysis",
-        "columnCount": 5,
-        "status": "Date dimension for time-based filtering"
-      },
-      "Dim_Airlines": {
-        "description": "Dimension table for airline information",
-        "columnCount": 8,
-        "status": "Supporting dimension for airline classification"
-      }
-    },
-    "measureGroups": {
-      "Financial Measures": [
-        "_EBIT",
-        "_Total Revenue",
-        "_Passenger Revenue",
-        "_Cargo Revenue",
-        "_Fuel Costs",
-        "_Employee Costs",
-        "_Supplier Costs",
-        "_Ownership Costs",
-        "_Margin"
-      ],
-      "Operational Metrics": [
-        "_ASKs",
-        "_RPKs",
-        "_Seats",
-        "_Sectors",
-        "_Block Hours",
-        "_Passengers",
-        "_Load Factor",
-        "_Stage Length",
-        "_Gauge"
-      ],
-      "Revenue Analysis": [
-        "_RASK",
-        "_PRASK",
-        "_Other RASK",
-        "_Cargo RASK"
-      ],
-      "Cost Analysis": [
-        "_CASK",
-        "_CASK Fuel",
-        "_CASK Employee",
-        "_CASK Supplier",
-        "_CASK Ownership",
-        "_CASK exFuel"
-      ],
-      "Performance Metrics": [
-        "_OTP 15D",
-        "_OTP 180A",
-        "_Regularity"
-      ],
-      "Financial Position": [
-        "_Net debt",
-        "_Cash and cash equivalents",
-        "_Net debt/EBITDA",
-        "_%Cash 12m Revenue"
-      ],
-      "Context Measures": [
-        "Selected Currency",
-        "Selected Subunit"
-      ]
-    }
-  },
-  "detailedComparison": {
-    "POC Data": {
-      "totalColumns": 30,
-      "description": "Fact table containing all operational and financial data",
-      "columnsByType": {
-        "Double": [
-          "RPKs",
-          "Passenger Revenue",
-          "Block Hours",
-          "Seats",
-          "Sectors",
-          "Ownership Costs",
-          "Other Revenue",
-          "Total Revenue",
-          "Fuel Costs",
-          "Passengers",
-          "Total Expenditure on Operations",
-          "Supplier Costs",
-          "ASKs",
-          "Cargo Revenue",
-          "Employee Costs",
-          "Year",
-          "%Cash 12m Revenue",
-          "Cash and cash equivalents",
-          "Net debt",
-          "Net debt/EBITDA",
-          "Flights_15D",
-          "Flights_180A",
-          "Flights",
-          "Flights_D",
-          "Flights_A",
-          "Cancellations"
-        ],
-        "String": [
-          "Status",
-          "Opco",
-          "Quarter"
-        ],
-        "DateTime": [
-          "Date"
-        ]
-      }
-    },
-    "Currency": {
-      "totalColumns": 3,
-      "columns": [
-        "CURRENCY",
-        "OPCO",
-        "SUBUNIT"
-      ]
-    },
-    "Dim_Calendar": {
-      "totalColumns": 5,
-      "columns": [
-        "Date",
-        "Year",
-        "MonthNumber",
-        "Day",
-        "Quarter"
-      ]
-    },
-    "Dim_Airlines": {
-      "totalColumns": 8,
-      "columns": [
-        "Airline Code",
-        "Airline Name",
-        "Ariline Type",
-        "Continent",
-        "Country",
-        "Region",
-        "Alliance",
-        "EU_Airline"
-      ]
-    }
-  },
-  "relationshipsDetail": [
-    {
-      "name": "POC Data to Currency",
-      "fromTable": "POC Data",
-      "fromColumn": "Opco",
-      "toTable": "Currency",
-      "toColumn": "OPCO",
-      "cardinality": "Many-to-One",
-      "direction": "OneDirection",
-      "status": "Active"
-    },
-    {
-      "name": "POC Data to Calendar",
-      "fromTable": "POC Data",
-      "fromColumn": "Date",
-      "toTable": "Dim_Calendar",
-      "toColumn": "Date",
-      "cardinality": "Many-to-One",
-      "direction": "OneDirection",
-      "status": "Active"
-    },
-    {
-      "name": "POC Data to Airlines",
-      "fromTable": "POC Data",
-      "fromColumn": "Opco",
-      "toTable": "Dim_Airlines",
-      "toColumn": "Airline Code",
-      "cardinality": "Many-to-One",
-      "direction": "OneDirection",
-      "status": "Active"
-    }
-  ],
-  "measureCategories": {
-    "Financial": {
-      "count": 10,
-      "measures": [
-        "_EBIT",
-        "_Total Revenue",
-        "_Passenger Revenue",
-        "_Cargo Revenue",
-        "_Fuel Costs",
-        "_Employee Costs",
-        "_Supplier Costs",
-        "_Ownership Costs",
-        "_Total Expenditure on Operations",
-        "_Margin"
-      ]
-    },
-    "Operational": {
-      "count": 9,
-      "measures": [
-        "_ASKs",
-        "_RPKs",
-        "_Seats",
-        "_Sectors",
-        "_Block Hours",
-        "_Passengers",
-        "_Load Factor",
-        "_Stage Length",
-        "_Gauge"
-      ]
-    },
-    "Efficiency": {
-      "count": 10,
-      "measures": [
-        "_RASK",
-        "_PRASK",
-        "_Other RASK",
-        "_CASK",
-        "_CASK Fuel",
-        "_CASK Employee",
-        "_CASK Supplier",
-        "_CASK Ownership",
-        "_CASK exFuel",
-        "_Cargo RASK"
-      ]
-    },
-    "Performance": {
-      "count": 3,
-      "measures": [
-        "_OTP 15D",
-        "_OTP 180A",
-        "_Regularity"
-      ]
-    },
-    "Financial Position": {
-      "count": 4,
-      "measures": [
-        "_Net debt",
-        "_Cash and cash equivalents",
-        "_Net debt/EBITDA",
-        "_%Cash 12m Revenue"
-      ]
-    },
-    "Context": {
-      "count": 3,
-      "measures": [
-        "_Other Revenue",
-        "Selected Currency",
-        "Selected Subunit"
-      ]
-    }
-  },
-  "completeness": {
-    "tables": {
-      "found": 4,
-      "expected": 4,
-      "percentage": 100
-    },
-    "measures": {
-      "found": 39,
-      "expected": 39,
-      "percentage": 100
-    },
-    "relationships": {
-      "found": 3,
-      "expected": 3,
-      "percentage": 100
-    }
-  },
-  "exportMetadata": {
-    "exportDate": "2026-05-22T11:08:46.494869Z",
-    "exportTool": "Claude Power BI Assistant",
-    "connectionName": "PBIDesktop-POC Competitors AI Ready-57093",
-    "referenceFile": "model_metadata_comprehensive.json",
-    "notes": [
-      "Complete metadata comparison completed",
-      "All tables, columns, measures, and relationships documented",
-      "Model is fully equipped with required airline operational metrics",
-      "Includes financial, operational, and performance measurements",
-      "Supports multi-dimensional analysis with dimensions for Calendar, Airlines, and Currency"
-    ]
+    "userTables": 4,
+    "systemTables": 0,
+    "totalColumns": 44,
+    "totalMeasures": 40,
+    "totalRelationships": 2
   }
 }
