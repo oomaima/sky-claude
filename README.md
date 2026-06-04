@@ -201,14 +201,14 @@ docker-compose up --build
 The Power BI semantic model has been enhanced and optimized for seamless AI agent integration. Structural changes have been applied to expose tables, columns, and measures in a format that is interpretable by Claude and easy to query via DAX.
 
 Core tasks:
-       0.1 Replace base files
-              [PBIX File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready.pbix)
-              [JSON Metadata File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready_metadata.json)
+0.1 Replace base files
+[PBIX File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready.pbix)
+[JSON Metadata File](backend/share-knowledge-with-agents/POC_Competitors_AI_Ready_metadata.json)
 
-       0.2 Align code & instructions
-              Refresh System Prompts to reflect the new model structure (table names, measures, hierarchies)
-              Update DAX query examples, column mappings in visualization components, and LangGraph context instructions
-              Run full test suite against the new model to ensure backward compatibility
+0.2 Align code & instructions
+Refresh System Prompts to reflect the new model structure (table names, measures, hierarchies)
+Update DAX query examples, column mappings in visualization components, and LangGraph context instructions
+Run full test suite against the new model to ensure backward compatibility
 
 ### 1. DAX Self-Correction Loop
 The current LangGraph workflow stops if Power BI rejects the generated DAX. Add a retry node that feeds the PBI error message back to Claude (with the failed query as context) so it can self-correct and re-execute — targeting up to 2 automatic retries before surfacing the error to the user. This is the single highest-impact stability fix as DAX syntax errors are the most common failure mode.
